@@ -1,0 +1,24 @@
+cabal-version:      3.0
+name:               learning-haskell2
+version:            0.1.0.0
+synopsis:           learn-haskell-2
+description:        simple web server
+license:            MIT
+license-file:       LICENSE
+author:             Alexey Rykhalskiy
+maintainer:         alexey.rykhalskiy@gmail.com
+category:           Learning Haskell
+build-type:         Simple
+common warnings
+    ghc-options: -Wall
+executable learning-haskell2
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:
+      base ^>=4.17.2.0,
+      scotty >= 0.12
+
+    hs-source-dirs:   app
+    default-language: GHC2021
